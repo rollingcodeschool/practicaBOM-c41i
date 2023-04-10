@@ -46,12 +46,29 @@ p{
     0 0 100px #7d17b8;
 }
 
+.btn{
+    color: #fff;
+}
+
 .btnAzul{
    background: #54a6ef; 
 }
 .btnVerde{
-   background: rgb(134, 255, 148); 
+   background: #86ff94; 
 }
 .btnFucsia{
    background: #7d17b8; 
+}
+
+.btnAzul:hover{
+    border: 1px solid #54a6ef;
+    color: #54a6ef;
+}
+.btnVerde:hover{
+    border: 1px solid #86ff94;
+    color: #86ff94;
+}
+.btnFucsia:hover{
+    border: 1px solid #7d17b8;
+    color: #7d17b8;
 }
