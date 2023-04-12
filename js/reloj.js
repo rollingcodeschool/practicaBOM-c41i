@@ -30,7 +30,7 @@ function obtenerFechaHora(){
       "Diciembre",
     ];
     
-    console.log(diaSemanas[fechaActual.getDay()]);
+    // console.log(diaSemanas[fechaActual.getDay()]);
     // Lunes 10 de Abril del 2023
     let parrafoFecha = document.querySelector("#fecha");
     let parrafoHora = document.querySelector("#hora");
@@ -58,4 +58,18 @@ function obtenerFechaHora(){
     
 }
 
+function cambiarColor(color){
+    let section = document.querySelector('.fs-1');
+    section.className= 'fs-1 '+ color;
+}
+
+let btnAzul = document.querySelector('#btnAzul'),
+ btnVerde = document.querySelector('#btnVerde'),
+ btnFucsia = document.querySelector('#btnFucsia');
+
+ btnAzul.addEventListener('click', ()=> cambiarColor('textoAzul'));
+ btnVerde.addEventListener('click', ()=> cambiarColor('textoVerde'));
+ btnFucsia.addEventListener('click', ()=> cambiarColor('textoFucsia'));
+
 setInterval(obtenerFechaHora,1000);
+
